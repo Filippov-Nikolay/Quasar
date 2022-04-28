@@ -40,6 +40,8 @@
 }
 .burger {
     display: none;
+    background-color: #fff;
+    border: none;
 }
 .burger span {
     display: block;
