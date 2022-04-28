@@ -1,0 +1,78 @@
+.section {
+    padding: 50px;
+}
+.container {
+}
+.section__content {
+}
+.section__title {
+    text-align: center;
+    text-transform: uppercase;
+}
+.section__about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 80px;
+}
+.section__item {
+    position: relative;
+    margin: 0 30px 30px;
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+.section__img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+}
+.section__img img {
+    margin: 0 auto;
+    width: 180px;
+    height: 180px;
+}
+.section__info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    z-index: -1;
+    text-align: center;
+    background: rgba(223, 223, 223, 0.65);
+    border-radius: 0 0 15px 15px;
+    transition: all .5s ease;
+}
+.section__item:hover .section__info {
+    height: 50%;
+    opacity: 1;
+    z-index: 1;
+}
+.info__title {
+    font-size: 18px;
+}
+.info__price {
+    font-size: 18px;
+}
+.info__button {
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    width: fit-content;
+    font-size: 16px;
+    color: #1B1B1B;
+    border: 1px solid #000;
+    transition: all .5s ease;
+}
+.info__button:hover {
+    color: #fff;
+    background-color: #000;
+}
